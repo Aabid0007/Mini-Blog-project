@@ -11,22 +11,19 @@ const AdminForm = () => {
   const { errors, isSubmitting } = formState;
   const navigate = useNavigate();
   
-  const onSubmit = (data) => {
-    axios
-      .post('https://blog-z3i4.onrender.com/api/blogs', data)
-      .then((response) => {
-        console.log('Successfully Added:', response.data);
-        toast.success('Blog created successfully!');
-        reset();
-
-        setTimeout(() => {
+  const onSubmit = async (data) => {
+    try {
+      const response = await axios.post('https://blog-z3i4.onrender.com/api/blogs', data);
+      console.log('Successfully Added:', response.data);
+      toast.success('Blog created successfully!');
+      reset();
+      setTimeout(() => {
         navigate('/');
-       }, 5000);
-      })
-      .catch((error) => {
-        console.log('An error occurred:', error);
-        toast.error('Error creating blog. Please try again.');
-      });
+      }, 5000);
+    } catch (error) {
+      console.error('An error occurred:', error);
+      toast.error('Error creating blog. Please try again.');
+    }
   };
 
   const handleInputChange = (e) => {
