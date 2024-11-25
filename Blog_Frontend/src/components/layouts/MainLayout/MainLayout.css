@@ -1,0 +1,43 @@
+.MainPage {
+  background-color: #f1f1f1;
+  min-height: 100vh;
+}
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.Main_Heading {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  padding: 62px 10px 50px;
+}
+.Main_Heading p{
+    font-size: 15px;
+    font-weight: 400;
+}
+.Sub_Heading span {
+  background-color: black;
+  color: #fff;
+  padding: 2px 7px;
+}
+.BlogPage{
+  display: flex;
+  padding: 0 0 35px;
+}
+/* Blog Main Card */
+.Blog_Main_Cards_area {
+  width: 66.666%;
+  display: flex;
+  flex-direction: column;
+
+}
+/* side blog details */
+.Blog_sub_Content_area {
+  width: 33.3%;
+  display: flex;
+  flex-direction: column;
+}

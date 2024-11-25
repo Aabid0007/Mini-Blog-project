@@ -1,0 +1,81 @@
+  .Blog_section {
+    padding: 16px;
+  }
+
+  .Blog_card {
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #fff;
+  }
+
+  .Blog_image {
+    object-fit: cover;
+    vertical-align: middle;
+    width: 100%;
+    max-height: 284px;
+  }
+
+  .Blog_contant {
+    padding: 10px 25px 15px 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    overflow-wrap: anywhere;
+  }
+
+  .Blog_contant h3 {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.5;
+  }
+
+  .Blog_contant h5 {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+
+  .Blog_contant p {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.5;
+    padding-bottom: 10px;
+    max-width: 872px;
+  }
+  .date {
+    color: gray;
+  }
+  .read_btn {
+    padding: 12px 24px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+  }
+  .read_btn:hover {
+    background-color: #ccc;
+  }
+  .Blog_details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .comment_box {
+    margin-right: 5px;
+    font-size: 15px;
+    font-weight: 500;
+  }
+  .num_comments {
+    padding: 2px 8px;
+    background-color: #000;
+    color: #fff;
+  }
+  .material-symbols-outlined {
+    font-variation-settings:
+      'FILL' 0,
+      'wght' 400,
+      'GRAD' -25,
+      'opsz' 10
+  }

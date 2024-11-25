@@ -1,0 +1,21 @@
+.Tags{
+    padding: 16px 10px;
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+.tagName {
+    /* color: #fff; */
+    background-color: #f1f1f1;
+    font-size: 12px;
+    line-height: 1.5;
+    padding: 0 7px;
+    margin-bottom: 16px;
+}
+.blackbox{
+    background-color: black;
+    color: #fff;
+    font-size: 14px;
+    line-height: 1.5;
+    padding: 3px 8px;
+}

@@ -1,0 +1,14 @@
+.Tag_Card{
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #fff;
+}
+.Tag_heading{
+    padding: 16px 16px;
+    background-color: #f1f1f1;
+}
+.Tag_heading h4{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+

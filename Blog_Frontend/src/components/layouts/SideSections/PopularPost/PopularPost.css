@@ -1,0 +1,37 @@
+.PopularHeading{
+    padding: 16px 16px;
+    background-color: #f1f1f1;
+}
+.PopularHeading h4{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+.Postcard_content{
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #fff;
+}
+.PostCard{
+    padding: 16px 16px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.PostCard:hover{
+    background-color: #ccc;
+}
+.PostCard img{
+    width: 50px;
+    height: 30px;
+}
+.PostCard_details h4{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+.PostCard_details span{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.5;
+}

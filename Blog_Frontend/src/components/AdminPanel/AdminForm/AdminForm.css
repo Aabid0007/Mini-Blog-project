@@ -1,0 +1,57 @@
+.AdminForm{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom:60px ;
+}
+.heading h2{
+    font-size: 30px;
+    font-weight: 500;
+}
+.heading{
+    display: flex;
+    justify-content: center;
+}
+.formContiner{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #fff;
+    padding: 38px 20px;
+}
+.FormSection{
+    width: 49%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.FormContent{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-bottom: 15px;
+}
+.FormContent h4{
+    font-size: 18px;
+    font-weight: 500;
+}
+.inputBox{
+    height: 32px;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 5px;
+    border: 1px solid gray;
+    padding: 0 5px;
+}
+.textarea{
+    max-width: 98%;
+    min-height: 151px;
+    min-width: 98%;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 8px 5px;
+    border-radius: 10px;
+}
+.error{
+    color: red;
+}
