@@ -13,7 +13,7 @@ const AdminPanelClick=() =>(
         <footer>
           <Pagination currentPage={currentPage} totalPages={totalPages} onPageChange={onPageChange} />
           <p>Powered by Stackup </p>
-          <button onClick={ () => AdminPanelClick()}>Admin Panel</button>
+          <button className='AdminBtn' onClick={AdminPanelClick}>Admin Panel</button>
         </footer>
       </div>
     </div>

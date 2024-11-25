@@ -4,16 +4,24 @@ import FormPreview from '../FormPreview/FormPreview';
 import axios from 'axios';
 import { useForm } from 'react-hook-form';
 import { toast } from 'react-toastify';
+import { useNavigate } from 'react-router-dom';
 
 const AdminForm = () => {
-  const { register, handleSubmit, setValue ,watch, formState} = useForm();
+  const { register, handleSubmit, setValue ,watch, formState, reset} = useForm();
   const { errors } = formState;
+  const navigate = useNavigate();
+  
   const onSubmit = (data) => {
     axios
       .post('https://blog-z3i4.onrender.com/api/blogs', data)
       .then((response) => {
         console.log('Successfully Added:', response.data);
         toast.success('Blog created successfully!');
+        reset();
+        
+        setTimeout(() => {
+        navigate('/');
+       }, 5000);
       })
       .catch((error) => {
         console.log('An error occurred:', error);

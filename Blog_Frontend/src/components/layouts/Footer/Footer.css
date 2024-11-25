@@ -31,6 +31,17 @@ footer{
 footer p{
     font-size: 15px;
     line-height: 1.5;
+    display: flex;
+    justify-content: space-between;
+}
+.AdminBtn{
+    background: #fff;
+    border: none;
+    padding: 5px 8px;
+    border-radius: 5px;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
 }
 .active{
     color: red;
