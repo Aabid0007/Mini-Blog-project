@@ -9,11 +9,9 @@ connectDb();
 const app = express();
 const port = process.env.PORT || 3000;
 
-const allowedOrigins = ["https://mini-blog-b7ik.onrender.com"];
 app.use(cors({
-    origin: allowedOrigins,
-    credentials: true,
-}));
+    origin: "https://mini-blog-b7ik.onrender.com"
+  }));
 
 app.use(express.json());
 app.use("/api/blogs", require("./routes/blogsRoutes"));
