@@ -9,7 +9,7 @@ connectDb();
 const app = express();
 const port = process.env.PORT || 3000;
 
-const allowedOrigins = ["https://contact-list-frontend.onrender.com"];
+const allowedOrigins = ["https://mini-blog-b7ik.onrender.com"];
 app.use(cors({
     origin: allowedOrigins,
     credentials: true,
