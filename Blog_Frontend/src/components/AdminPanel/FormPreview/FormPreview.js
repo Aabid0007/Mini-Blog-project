@@ -15,7 +15,7 @@ const FormPreview = ({ formData = {} }) => {
     <div className='PreviewSection'>
       <div className='PreviewContent'>
         <>
-          <img className='Blog_image' src={image} alt="Preview Img" />
+          <img className='Blog_image' src={ image ? image : "https://www.w3schools.com/w3images/woods.jpg"} alt="Preview Img" />
         </>
         <div className='Blog_contant'>
           <h3 id='PostTitle'>{ heading|| "Post Title"}</h3>
