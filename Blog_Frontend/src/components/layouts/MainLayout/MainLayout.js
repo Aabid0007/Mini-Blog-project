@@ -15,7 +15,7 @@ const MainLayout = () => {
 
   useEffect(() => {
     axios
-      .get('http://localhost:3001/api/blogs')
+      .get('https://blog-z3i4.onrender.com/api/blogs')
       .then((response) => {
         console.log('data:', response.data);
         setBlogs(response.data);

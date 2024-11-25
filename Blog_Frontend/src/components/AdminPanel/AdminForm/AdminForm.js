@@ -10,7 +10,7 @@ const AdminForm = () => {
   const { errors } = formState;
   const onSubmit = (data) => {
     axios
-      .post('http://localhost:3001/api/blogs', data)
+      .post('https://blog-z3i4.onrender.com/api/blogs', data)
       .then((response) => {
         console.log('Successfully Added:', response.data);
         toast.success('Blog created successfully!');
