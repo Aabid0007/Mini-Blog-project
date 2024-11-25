@@ -10,7 +10,11 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 
-app.use(cors({ origin: "https://mini-blog-b7ik.onrender.com" }));
+const allowedOrigins = ["https://contact-list-frontend.onrender.com"];
+app.use(cors({
+    origin: allowedOrigins,
+    credentials: true,
+}));
 app.use(express.json());
 app.use("/api/blogs", require("./routes/blogsRoutes"));
 
@@ -21,8 +25,9 @@ app.use(express.static(path.join(__dirname, 'build')));
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
+
 app.use(errorHandler);
 
-app.listen(port, () => {
+app.listen(port, '0.0.0.0', () => {
     console.log(`Server running on port ${port}`);
 });
