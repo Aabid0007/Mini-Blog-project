@@ -9,22 +9,20 @@ connectDb();
 const app = express();
 const port = process.env.PORT || 3000;
 
-
 const allowedOrigins = ["https://contact-list-frontend.onrender.com"];
 app.use(cors({
     origin: allowedOrigins,
     credentials: true,
 }));
+
 app.use(express.json());
 app.use("/api/blogs", require("./routes/blogsRoutes"));
 
-
-
 app.use(express.static(path.join(__dirname, 'build')));
-
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
+
 
 app.use(errorHandler);
 
