@@ -8,7 +8,7 @@ import { useNavigate } from 'react-router-dom';
 
 const AdminForm = () => {
   const { register, handleSubmit, setValue ,watch, formState, reset} = useForm();
-  const { errors } = formState;
+  const { errors, isSubmitting } = formState;
   const navigate = useNavigate();
   
   const onSubmit = (data) => {
@@ -18,7 +18,7 @@ const AdminForm = () => {
         console.log('Successfully Added:', response.data);
         toast.success('Blog created successfully!');
         reset();
-        
+
         setTimeout(() => {
         navigate('/');
        }, 5000);
@@ -117,8 +117,8 @@ const AdminForm = () => {
               <p className='error'>{errors.description?.message}</p>
 
             </div>
-            <button type="submit" className="btn">
-              Create Post
+             <button type="submit" className="btn" disabled={isSubmitting}>
+              {isSubmitting ? "Creating..." : "Create Post"}
             </button>
           </form>
         </div>
