@@ -35,7 +35,7 @@ const errorHandler = (err, req, res, next) => {
         statusCode: err.stack,
       });
     default:
-      console.log("NO Error, All good !");
+      // console.log("NO Error, All good !");
       break;
   }
 };

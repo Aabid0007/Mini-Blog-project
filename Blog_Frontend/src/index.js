@@ -3,10 +3,10 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter } from 'react-router-dom/dist';
 import TimeAgo from 'javascript-time-ago';
 import en from 'javascript-time-ago/locale/en.json'
 import ru from 'javascript-time-ago/locale/ru.json'
+import { BrowserRouter } from 'react-router-dom';
 
 TimeAgo.addDefaultLocale(en)
 TimeAgo.addLocale(ru)
@@ -14,7 +14,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-    <App />
+      <App />
     </BrowserRouter>
   </React.StrictMode>
 );
