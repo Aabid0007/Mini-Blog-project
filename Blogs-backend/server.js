@@ -9,7 +9,7 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 
-app.use(cors({ origin: "https://blog-z3i4.onrender.com" }));
+app.use(cors({ origin: "https://mini-blog-b7ik.onrender.com" }));
 app.use(express.json());
 app.use("/api/blogs", require("./routes/blogsRoutes"));
 app.use(errorHandler);
